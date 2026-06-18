@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Store - Home</title>
+</head>
+<body>
+
+  <h1>🍔 Catálogo de productos</h1>
+
+  <!-- 🔎 BUSCADOR -->
+  <input type="text" id="search" placeholder="Buscar producto..." />
+
+  <!-- 🍕 CATEGORÍAS -->
+  <div>
+    <button onclick="render(products)">Todos</button>
+    <button onclick="filterCategory('Pizza')">Pizza</button>
+    <button onclick="filterCategory('Hamburguesa')">Hamburguesa</button>
+  </div>
+
+  <!-- 🛒 PRODUCTOS -->
+  <div id="products"></div>
+
+  <br>
+
+  <!-- 🛒 LINK AL CARRITO -->
+  <a href="../cart/cart.html">Ver carrito 🛒</a>
+
+  <br><br>
+
+  <!-- 🔐 LOGOUT -->
+  <button id="logout">Cerrar sesión</button>
+
+  <script type="module" src="./home.js"></script>
+
+</body>
+</html>
